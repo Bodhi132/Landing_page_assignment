@@ -69,9 +69,9 @@ export default function Home() {
       </div>
       <div className="flex md:flex-row flex-col md:py-0 py-7 md:h-[22rem] h-[45rem] justify-around items-center bg-gradient-to-r from-[#FABC1F] to-[#7CA546]">
         <div className=" mb-5 md:mb-0">
-          <h1 className={` text-white text-[2.4rem] font-bold ${inter.className}`}>Let's discuss</h1>
+          <h1 className={` text-white text-[2.4rem] font-bold ${inter.className}`}>Let&apos;s discuss</h1>
           <h1 className={` text-white text-[2.4rem] font-bold ${inter.className}`}>Your project</h1>
-          <p className={` text-white text-xs font-medium ${inter.className} mt-7`}>Let's figure out how to create an effective application, <br/>
+          <p className={` text-white text-xs font-medium ${inter.className} mt-7`}>Let&apos;s figure out how to create an effective application, <br/>
           its cost and terms of its development</p>
         </div>
         <DiscussCard />

@@ -73,7 +73,7 @@ const Industries = () => {
                 return (
                     <div key={ind} className='flex items-center space-x-3'>
                         <div className=' h-11 w-11 rounded-full bg-white shadow-xl flex justify-center items-center'>
-                            <img src={item.url} alt="" srcset="" className=' block' />
+                            <img src={item.url} alt="img" className=' block' />
                         </div>
                         <h1 className=' font-semibold'>{item.name}</h1>
                     </div>

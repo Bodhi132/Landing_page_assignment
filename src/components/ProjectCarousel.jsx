@@ -51,7 +51,7 @@ const ProjectCarousel = () => {
             <div className=' flex space-x-[2.5rem] my-[3rem]'>
                 {ProjectsData.map((data, ind) => {
                     return (
-                        <p onClick={() => setSelectedProjects(ind)} className={`cursor-pointer ${ind === SelectedProjects ? 'font-bold' : 'font-normal'}`}>{data.name}</p>
+                        <p onClick={() => setSelectedProjects(ind)} className={`cursor-pointer ${ind === SelectedProjects ? 'font-bold' : 'font-normal'}`} key={ind}>{data.name}</p>
                     )
                 })
                 }
@@ -61,7 +61,7 @@ const ProjectCarousel = () => {
                     ProjectsData.map((data, index) => {
                         return (
                             index === SelectedProjects &&
-                            <div className=' flex'>
+                            <div className=' flex' key={index}>
                                 <div className='w-[60%]'>
                                     <h1 className='font-bold text-[2.3rem]'>{data.name}</h1>
                                     <p className=' font-semibold text-sm my-[2rem]'>{data.description}</p>
@@ -87,8 +87,8 @@ const ProjectCarousel = () => {
                                         </div>
                                     </div>
                                     <div className='flex space-x-6 mt-[1rem]'>
-                                        <img src="/ProjectImg/ios.png" alt="" srcset="" className='block cursor-pointer' />
-                                        <img src="/ProjectImg/android.png" alt="" srcset="" className='block cursor-pointer' />
+                                        <img src="/ProjectImg/ios.png" alt="" className='block cursor-pointer' />
+                                        <img src="/ProjectImg/android.png" alt="" className='block cursor-pointer' />
                                     </div>
                                 </div>
                                 <div className=' h-full'>
